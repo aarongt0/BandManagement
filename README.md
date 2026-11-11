@@ -2,10 +2,13 @@
 
 Band Manager makes it easy for smaller-scale bands to track necessary and important data, such as their finances, past/future gigs, setlists, and song rotation. 
 
-## Demo Link
-[Band Manager](https://band-management-pied.vercel.app)
+[Link to site](https://band-management-pied.vercel.app)
 
-<img width="2555" height="759" alt="BMAppGigsSS" src="https://github.com/user-attachments/assets/4dc82416-fb2e-4184-8275-91d1d4da07dc" />
+
+
+https://github.com/user-attachments/assets/46cbe3af-79ae-4d33-94dc-f8f1f71da51c
+
+
 
 ## Features
 - Add and delete songs from your band's rotation
@@ -83,10 +86,3 @@ erDiagram
 - *One setlist can be reused across multiple gigs — gigs store a reference to their setlist, not the reverse.*
 
 - *SetlistSongs reference Songs by FK, allowing multiple of the same song to be on a given setlist without issue. The Pydantic response schema then embeds the Song onto the SetlistSong as a property (ex. 'setlistSong.song.artist' becomes a valid path).*
-
-
-## What I'd Do Next
-- Improve auth to gate data endpoints by Bearer Token
-- Allow multiple users to access the same band
-- Implement an analytics page for finances and gigs (highest-paying venue, average hourly rate, etc.)
-- Allow for imports/exports of setlist data from Spotify or other music platforms
